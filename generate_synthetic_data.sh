@@ -40,4 +40,10 @@ for tech in illumina nanopore; do
     echo "Synthetic data generation is done for Illumina and Nanopore"
 done;
 
+ls *fastq | gzip *fastq
+mkdir illumina nanopore
+mv illumina-* illumina/
+mv nanopore-* nanopore/
+
+
 
